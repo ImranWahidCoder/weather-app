@@ -28,7 +28,6 @@ const displayResults = (weather) =>
     let hilow=document.querySelector('.hi-low');
     hilow.innerText=``;
     }
-    console.log(weather);
     const now = new Date();
     const city = document.querySelector('.city');
     const date = document.querySelector('.date');
