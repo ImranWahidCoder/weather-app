@@ -1,7 +1,8 @@
+// API details 
 const api =
 {
     key: "98e87e707cde1462208212d867353390",
-    baseurl: "https://api.openweathermap.org/data/2.5/"
+    baseurl: "https://api.openweathermap.org/data/2.5/" // API provider 
 }
 const dateBuilder = (now) => 
 {
