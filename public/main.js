@@ -80,3 +80,15 @@ const setQuery = (evt) => {
 }
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
+
+const curr_location=document.querySelector('.curr_location');
+curr_location.addEventListener("click",(e)=>
+{
+    e.preventDefault();
+    navigator.geolocation.getCurrentPosition((position)=>
+    {
+        let latitude=position.coords.latitude;
+        let longitude=position.coords.longitude;
+        location.href=`https://google.com/maps/?q=${latitude},${longitude}`;
+    });
+})

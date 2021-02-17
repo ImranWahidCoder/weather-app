@@ -113,3 +113,12 @@ main
     position: absolute;
     overflow: hidden;
 }
+.curr_location
+{
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
