@@ -16,6 +16,7 @@ const dateBuilder = (now) =>
 }
 const displayResults = (weather) => 
 {
+    const back = document.querySelector('.total');
     if(weather.cod==404)
     {
     const city = document.querySelector('.city');
@@ -41,23 +42,28 @@ const displayResults = (weather) =>
     const cond=weather.weather[0].main;
     if(cond=="Haze")
     {
-        weather_el.innerHTML=`<img src="hazy.png" height="32px" width="32px" class="data"> ${cond}`;
+        back.style.backgroundImage=`url("./Images/back/haze.webp")`;
+        weather_el.innerHTML=`<img src="./Images/hazy.png" height="32px" width="32px" class="data"> ${cond}`;
     }
     else if(cond=="Clear")
     {
-        weather_el.innerHTML=`<img src="clear.png" height="32px" width="32px" class="data"> ${cond}`;
+        back.style.backgroundImage=`url("./Images/back/clear.webp")`;
+        weather_el.innerHTML=`<img src="./Images/clear.png" height="32px" width="32px" class="data"> ${cond}`;
     }
     else if(cond=="Sunny")
     {
-        weather_el.innerHTML=`<img src="sun.png" height="32px" width="32px" class="data"> ${cond}`;
+        back.style.backgroundImage=`url("./Images/back/sun.jpg")`;
+        weather_el.innerHTML=`<img src="./Images/sun.png" height="32px" width="32px" class="data"> ${cond}`;
     }
     else if(cond=="Clouds")
     {
-        weather_el.innerHTML=`<img src="cloud3.png" height="32px" width="32px" class="data"> ${cond}`;
+        back.style.backgroundImage=`url("./Images/back/clouds.jpg")`;
+        weather_el.innerHTML=`<img src="./Images/cloud3.png" height="32px" width="32px" class="data"> ${cond}`;
     }
     else if(cond=="Rain")
     {
-        weather_el.innerHTML=`<img src="rain.png" height="32px" width="32px" class="data"> ${cond}`;
+        back.style.backgroundImage=`url("./Images/back/rain.jpg")`;
+        weather_el.innerHTML=`<img src="./Images/rain.png" height="32px" width="32px" class="data"> ${cond}`;
     }
     else
     {
